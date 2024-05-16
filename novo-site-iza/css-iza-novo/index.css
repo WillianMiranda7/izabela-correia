@@ -35,7 +35,7 @@
     background-color: var(--color30);
     align-items: center;
     padding: 24px 0;
-    height: 696px;
+    height: 616px;
 }
 
 .fatherOfIcon {
@@ -45,7 +45,7 @@
 }
 
 .previewIcons {
-    width: 72px;
+    width: 56px;
     background-color: white;
     box-sizing: unset;
     padding: 16px;
@@ -68,7 +68,8 @@
 }
 
 #about h1 {
-    color: var(--color30);
+    color: #8A2BE2;
+    font-size: 2.9rem;
 }
 
 #zebraSide {
@@ -136,7 +137,7 @@ form {
 }
 
 #sendMenssageButtom {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: "Nunito", sans-serif;
     font-weight: 600;
     margin-top: 16px;
