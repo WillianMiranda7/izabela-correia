@@ -19,8 +19,8 @@
     --colorContrast: #1A1D1A;
 
     /* Fonts */
-    --fontTitles:"Roboto", sans-serif;
-    --paragraph: "Nunito", sans-serif;
+    --fontTitles: "Roboto", sans-serif;
+    --fontParagraph: "Nunito", sans-serif;
 }
 
 body {
@@ -51,24 +51,24 @@ h2 {
 }
 
 h3 {
-    font-size: 1.6em;
+    font-size: 1.2em;
 }
 
 h4 {
-    font-size: 1.52em;
+    font-size: 1.1em;
 }
 
 h5 {
-    font-size: 1.46em;
+    font-size: 1em;
 }
 
 h6 {
-    font-size: 1.3em;
+    font-size: 0, 9em;
 }
 
 p {
     font-size: 1.10em;
-    font-family: var(--paragraph);
+    font-family: var(--fontParagraph);
     color: white;
     opacity: .9;
 }
@@ -78,7 +78,9 @@ a {
 }
 
 small {
-    font-size: 0.40em;
+    font-size: 0.9rem;
+    font-family: var(--fontParagraph);
+    opacity: .8;
 }
 
 
@@ -122,21 +124,21 @@ header {
     transition: 0.2s;
 }
 
-#menuHamburger.activate{
+#menuHamburger.activate {
     /* box-shadow:1px 1px 6px red, -1px -1px 6px red; */
     background-color: var(--colorContrast);
 }
 
-#menuHamburger.activate .hamburgerLine:nth-child(1){
+#menuHamburger.activate .hamburgerLine:nth-child(1) {
     transform: translateY(12px) rotate(-45deg);
     /* background-color: red; */
 }
 
-#menuHamburger.activate .hamburgerLine:nth-child(2){
+#menuHamburger.activate .hamburgerLine:nth-child(2) {
     opacity: 0;
 }
 
-#menuHamburger.activate .hamburgerLine:nth-child(3){
+#menuHamburger.activate .hamburgerLine:nth-child(3) {
     transform: translateY(-14px) rotate(45deg);
     /* background-color: red; */
 }
@@ -147,41 +149,41 @@ header {
 
 #menuUl {
     position: fixed;
-
     right: -100vh;
     top: 0;
     padding: 100px 40px 20px 20px;
     background-color: var(--colorContrast);
 
     border-radius: 0 0 0 15px;
+    box-shadow: 1px 1px 5px var(--color60);
     transition: .5s;
     z-index: 1;
 }
 
-#menuUl.activateUl{
+#menuUl.activateUl {
     right: 0;
     transition: 0.2s;
 }
 
 
-#menuUl li{
+#menuUl li {
     padding: 8px 0 4px 0px;
     margin-top: 24px;
     border-bottom: solid #800080;
     font-size: 1.4rem;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: .5px;
 }
 
-#menuUl a{
+#menuUl a {
     color: white;
-    font-family: var(--paragraph);
+    font-family: var(--fontParagraph);
 }
 
 
 
 /* Footer */
-footer{
+footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -189,28 +191,28 @@ footer{
     background-color: var(--colorContrast);
 }
 
-#iconGrop{
+#iconGrop {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
 }
 
-.socialFooterIcons{
+.socialFooterIcons {
     width: 32px;
 }
 
-path{
+path {
     fill: white;
 }
 
-#emailFooter{
+#emailFooter {
     color: white;
     font-family: var(--fontTitles);
     font-size: 1.1rem;
     margin-top: 16px;
 }
 
-#logoWeWill{
+#logoWeWill {
     margin-top: 16px;
 }
 
