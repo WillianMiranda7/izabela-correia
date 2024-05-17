@@ -20,7 +20,7 @@
     padding: 8px;
     color: white;
     background-color: rgba(0, 0, 0, 0);
-    border: solid 1px white;
+    border: solid 2px white;
     border-radius: 50px;
     font-size: 1rem;
 }
@@ -46,6 +46,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 1;
 }
 
 .previewIcons {
@@ -66,23 +67,26 @@
 
 /* About */
 #about {
-    padding: 0 8px;
+    padding: 40px 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 40px 0;
+    /* margin: 40px 0; */
+    background-size: cover;
+    position: relative;
 }
 
 #about h1 {
     color: #8A2BE2;
     font-size: 2.9rem;
+    z-index: 2;
 }
 
 #zebraSide {
     position: relative;
     margin-top: 32px;
     width: 192px;
-    opacity: .05;
+    opacity: .2;
 }
 
 

@@ -1,9 +1,14 @@
+
+p{
+    margin-top: 8px;
+}
+
 #servicesStripe h1{
     color: #fff;
 }
 
 #servicesContent{
-    padding: 32px 8px;
+    padding: 40px 8px;
     background-image: url(../imagens-iza-novo/fundo-textura-zebra.png);
 }
 
@@ -30,7 +35,6 @@
     margin-top: 8px;
     font-family: var(--fontParagraph);
     font-size: 1.10rem;
-    letter-spacing: 1px;
     font-weight: 500;
     line-height: 24px;
     opacity: .9;
@@ -38,6 +42,7 @@
 
 .txtServices ul li{
     margin-top: 8px;
+    font-weight: bold;
 }
 
 .aleatoria{
