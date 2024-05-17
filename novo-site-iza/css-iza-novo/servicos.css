@@ -1,9 +1,3 @@
-#servicesStripe{
-    margin-top: 16px;
-    background-color: var(--color30);
-    padding: 8px 8px;
-}
-
 #servicesStripe h1{
     color: #fff;
 }
@@ -18,7 +12,7 @@
 }
 
 .individualService{
-    /* blabla */
+    color: #fff;
 }
 
 .txtServices{

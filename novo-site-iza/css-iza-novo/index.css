@@ -6,8 +6,9 @@
     padding: 16px 0 16px 16px;
     color: #8A2BE2;
     line-height: 32px;
-    background-image: url(/imagens-iza-novo/fundo-completo-600px.png);
-    background-size: cover;
+    background-image: url(/imagens-iza-novo/fundo-completo-430px.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 100%;
 }
 
