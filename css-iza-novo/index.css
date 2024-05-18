@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+#firstTitle {
+    margin-top: 16px;
+    padding: 16px 0 16px 16px;
+    color: #8A2BE2;
+    line-height: 32px;
+    background-image: url(/imagens-iza-novo/fundo-completo-430px.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+#wppButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+    padding: 8px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 2px white;
+    border-radius: 50px;
+    font-size: 1rem;
+}
+
+#wppIconStartHome {
+    width: 16px;
+    margin-left: 8px;
+}
+
+
+/* First services */
+#previewServices {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color30);
+    align-items: center;
+    padding: 24px 0;
+    height: 568px;
+}
+
+.fatherOfIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.previewIcons {
+    width: 56px;
+    background-color: white;
+    box-sizing: unset;
+    padding: 16px;
+    border-radius: 50px;
+}
+
+#previewServices h2 {
+    margin-top: 8px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+/* About */
+#about {
+    padding: 40px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin: 40px 0; */
+    background-size: cover;
+    position: relative;
+}
+
+#about h1 {
+    color: #8A2BE2;
+    font-size: 2.9rem;
+    z-index: 2;
+}
+
+#zebraSide {
+    position: relative;
+    margin-top: 32px;
+    width: 192px;
+    opacity: .2;
+}
+
+
+/* Contact div */
+#contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: var(--color30);
+    padding: 24px 8px;
+}
+
+#contact h1,
+h2 {
+    color: white;
+}
+
+#emailAndPhone {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+
+.linksOnContact {
+    color: white;
+    font-family: var(--fontTitles);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+#whatsappLink{
+    margin-top: 8px;
+}
+
+#writeMenssage{
+    margin-top: 16px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#clientName,
+#clientEmail,
+#clientTel {
+    width: 100%;
+    margin-top: 8px;
+    height: 40px;
+    justify-content: space-between;
+}
+
+#menssageArea {
+    margin-top: 16px;
+    width: 100%;
+    resize: none;
+}
+
+#sendMenssageButtom {
+    font-size: 1.2rem;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    margin-top: 16px;
+    width: 120px;
+    height: 56px;
+    background-color: var(--color10);
+
+    box-shadow: 1px 1px 8px;
+    border-style: none;
+}

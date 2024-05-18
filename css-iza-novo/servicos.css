@@ -1,0 +1,51 @@
+
+p{
+    margin-top: 8px;
+}
+
+#servicesStripe h1{
+    color: #fff;
+}
+
+#servicesContent{
+    padding: 40px 8px;
+    background-image: url(../imagens-iza-novo/fundo-textura-zebra.png);
+}
+
+.separator{
+    height: 56px;
+}
+
+.individualService{
+    color: #fff;
+}
+
+.txtServices{
+    color: #fff;
+    background-color: var(--colorContrast);
+    padding: 16px;
+    border-radius: 17px;
+}
+
+.txtServices h3{
+    margin-top: 16px;
+}
+
+.txtServices ul{
+    margin-top: 8px;
+    font-family: var(--fontParagraph);
+    font-size: 1.10rem;
+    font-weight: 500;
+    line-height: 24px;
+    opacity: .9;
+}
+
+.txtServices ul li{
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.aleatoria{
+    border-radius: 17px;
+    margin-top: 8px;
+}
