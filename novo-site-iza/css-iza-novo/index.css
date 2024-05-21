@@ -4,7 +4,7 @@
 #firstTitle {
     margin-top: 16px;
     padding: 16px 0 16px 16px;
-    color: #8A2BE2;
+    color: #fff;
     line-height: 32px;
     background-image: url(/imagens-iza-novo/fundo-completo-430px.png);
     background-size: contain;
@@ -159,4 +159,14 @@ form {
 
     box-shadow: 1px 1px 8px;
     border-style: none;
+}
+
+@media screen and (min-width: 769px) {
+    #firstTitle{
+        font-size: 2rem;
+        background-image: url(../imagens-iza-novo/fundo-completo-600px.png);
+        background-size: cover;
+        line-height: 80px;
+        padding: 32px 0 32px 40px;
+    }
 }

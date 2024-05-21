@@ -144,7 +144,7 @@ header {
 }
 
 #logo {
-    width: 152px;
+    width: 164px;
 }
 
 #menuUl {
@@ -182,7 +182,11 @@ header {
 
 
 
-.firstStripe{
+
+
+
+
+.firstStripe {
     margin-top: 16px;
     background-color: var(--color30);
     padding: 8px 8px;
@@ -231,35 +235,65 @@ path {
 
 
 
-/* body{
-    padding: 0 8px;
-    font-size: 0.8rem;
+@media screen and (min-width: 769px) {
+
+    #logo {
+        width: 188px;
+    }
+
+    #menuHamburger {
+        display: none;
+    }
+
+    #menuUl {
+        position: unset;
+        display: flex;
+        right: 0;
+        flex-direction: row;
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    #menuUl li {
+        font-weight: 700;
+        margin: 0 16px 0 0;
+        padding: 4px 4px 2px 0px;
+        border: none;
+        position: relative;
+    }
+
+    .active {
+        position: relative;
+        margin: 0 16px 0 0;
+        padding: 4px 4px 2px 0px;
+    }
+
+    .active::after {
+        content: '';
+        position: absolute;
+        background-color: var(--color30);
+        height: 2px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        border-radius: 0 25px 25px 0;
+        box-shadow: 1px 1px 5px var(--color30), -1px -1px 5px var(--color30);
+    }
+
+    .noActive::after {
+        content: '';
+        position: absolute;
+        background-color: var(--color30);
+        height: 2px;
+        width: 0%;
+        bottom: 0;
+        left: 0;
+        border-radius: 0 25px 25px 0;
+        transition: .2s;
+    }
+
+    .noActive:hover:after {
+        width: 100%;
+    }
+
 }
-h1{
-    font-size: 2.986em;
-}
-h2{
-    font-size: 2.488em;
-}
-h3{
-    font-size: 2.074em;
-}
-h4{
-    font-size: 1.728em;
-}
-h5{
-    font-size: 1.44em;
-}
-h6{
-    font-size: 1.2em;
-}
-p{
-    font-size: 1em;
-    font-family: "Nunito", sans-serif;
-}
-a{
-    font-size: 1em;
-}
-small{
-    font-size: 0.833em;
-} */
