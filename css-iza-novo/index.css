@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
 #firstTitle {
     margin-top: 16px;
     padding: 16px 0 16px 16px;
@@ -46,7 +45,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 1;
+    z-index: 2;
 }
 
 .previewIcons {
@@ -58,7 +57,7 @@
 }
 
 #previewServices h2 {
-    margin-top: 8px;
+    margin-top: 16px;
     color: #fff;
     font-weight: 700;
     text-align: center;
@@ -118,11 +117,11 @@ h2 {
     font-weight: 700;
 }
 
-#whatsappLink{
+#whatsappLink {
     margin-top: 8px;
 }
 
-#writeMenssage{
+#writeMenssage {
     margin-top: 16px;
 }
 
@@ -162,11 +161,151 @@ form {
 }
 
 @media screen and (min-width: 769px) {
-    #firstTitle{
+
+
+    #firstTitle {
         font-size: 2rem;
         background-image: url(../imagens-iza-novo/fundo-completo-600px.png);
         background-size: cover;
         line-height: 80px;
-        padding: 32px 0 32px 40px;
+        padding: 32px 0 128px 10%;
+        position: relative;
+    }
+
+    #wppButton {
+        position: absolute;
+        margin-top: 16px;
+        padding: 13px 16px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0);
+        border: solid 3px white;
+        border-radius: 50px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: .2s;
+    }
+
+    #wppButton:hover {
+        font-size: 1.6rem;
+        padding: 14px 18px;
+        /* filter: drop-shadow(1px 1px 2px #fff); */
+        transition: .2rem;
+    }
+
+    #wppIconStartHome {
+        width: 32px;
+        margin-left: 16px;
+    }
+
+    #previewServices {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 32px 10%;
+        height: auto;
+    }
+
+    #about {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 0 10%;
+        justify-items: center;
+
+    }
+
+    #textAbout {
+        width: 100%;
+    }
+
+    #zebraSide {
+        width: 50%;
+    }
+
+
+    #contact {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 32px 10%;
+        flex-direction: row;
+    }
+
+    #callingWithMailAndPhone {
+        height: 100%;
+        align-self: flex-start;
+    }
+
+    #contact h1 {
+        text-align: start;
+        align-self: flex-start;
+        white-space: nowrap;
+    }
+
+    #emailAndPhone {
+        text-align: start;
+        align-self: center;
+    }
+
+    #writeMenssage {
+        margin-top: 0px;
+        text-align: start;
+    }
+
+    #inputsGroup {
+        display: grid;
+        grid-template-columns: 55% 45%;
+        grid-template-rows: auto auto auto;
+        gap: 2px;
+        margin-top: 16px;
+    }
+
+    #inputsForm {
+        grid-row: span 2;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 2px;
+    }
+
+    #clientName,
+    #clientEmail,
+    #clientTel {
+        margin-top: 0px;
+        height: 100%;
+        justify-content: left;
+        justify-content: space-between;
+    }
+
+    #menssageArea {
+        margin-top: 0px;
+        width: 100%;
+        grid-row: span 2;
+    }
+
+    #clientName,
+    #clientEmail,
+    #clientTel,
+    #menssageArea {
+        padding: 8px;
+        font-family: var(--fontParagraph);
+        font-weight: 00;
+        font-size: 1rem;
+    }
+
+    #clientName,
+    #clientEmail,
+    #menssageArea,
+    #clientTel::placeholder {
+        font-family: var(--fontTitles);
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+
+    #sendMenssageButtom {
+        cursor: pointer;
+        align-self: flex-start;
+        justify-self: right;
+        align-self: baseline;
+        grid-column: span 2;
+        margin: 0;
     }
 }
