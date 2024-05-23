@@ -111,10 +111,16 @@ h2 {
 }
 
 .linksOnContact {
+    display: flex;
     color: white;
     font-family: var(--fontTitles);
     font-size: 1.2rem;
     font-weight: 700;
+}
+
+.iconContact{
+    width: 24px;
+    margin-right: 8px;
 }
 
 #whatsappLink {
@@ -251,6 +257,7 @@ form {
 
     #inputsGroup {
         display: grid;
+        height: 150px;
         grid-template-columns: 55% 45%;
         grid-template-rows: auto auto auto;
         gap: 2px;
@@ -306,6 +313,10 @@ form {
         justify-self: right;
         align-self: baseline;
         grid-column: span 2;
-        margin: 0;
+        margin-top: 2px;
+
+        width: 104px;
+        height: 40px;
+        font-size: 1rem;
     }
 }

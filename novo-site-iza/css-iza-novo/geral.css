@@ -310,6 +310,14 @@ path {
     }
 
 
+    .firstStripe {
+        margin-top: 16px;
+        background-color: var(--color30);
+        padding: 16px 10%;
+        color: #fff;
+    }
+
+
     /* Footer mobile */
     footer {
         flex-direction: row;

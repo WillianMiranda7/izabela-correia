@@ -1,0 +1,171 @@
+/* Contact div */
+#contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: var(--color30);
+    padding: 24px 8px;
+}
+
+#contact h1,
+h2 {
+    color: white;
+}
+
+#emailAndPhone {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+
+.linksOnContact {
+    display: flex;
+    color: white;
+    font-family: var(--fontTitles);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.iconContact{
+    width: 24px;
+    margin-right: 8px;
+}
+
+#whatsappLink {
+    margin-top: 8px;
+}
+
+#writeMenssage {
+    margin-top: 16px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#clientName,
+#clientEmail,
+#clientTel {
+    width: 100%;
+    margin-top: 8px;
+    height: 40px;
+    justify-content: space-between;
+}
+
+#menssageArea {
+    margin-top: 16px;
+    width: 100%;
+    resize: none;
+}
+
+#sendMenssageButtom {
+    font-size: 1.2rem;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    margin-top: 16px;
+    width: 120px;
+    height: 56px;
+    background-color: var(--color10);
+
+    box-shadow: 1px 1px 8px;
+    border-style: none;
+}
+
+@media screen and (min-width: 768px) {
+    #contact {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 32px 10%;
+        flex-direction: row;
+    }
+
+    #callingWithMailAndPhone {
+        height: 100%;
+        align-self: flex-start;
+    }
+
+    #contact h1 {
+        text-align: start;
+        align-self: flex-start;
+        white-space: nowrap;
+    }
+
+    #emailAndPhone {
+        text-align: start;
+        align-self: center;
+    }
+
+    #writeMenssage {
+        margin-top: 0px;
+        text-align: start;
+    }
+
+    #inputsGroup {
+        display: grid;
+        height: 150px;
+        grid-template-columns: 55% 45%;
+        grid-template-rows: auto auto auto;
+        gap: 2px;
+        margin-top: 16px;
+    }
+
+    #inputsForm {
+        grid-row: span 2;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 2px;
+    }
+
+    #clientName,
+    #clientEmail,
+    #clientTel {
+        margin-top: 0px;
+        height: 100%;
+        justify-content: left;
+        justify-content: space-between;
+    }
+
+    #menssageArea {
+        margin-top: 0px;
+        width: 100%;
+        grid-row: span 2;
+    }
+
+    #clientName,
+    #clientEmail,
+    #clientTel,
+    #menssageArea {
+        padding: 8px;
+        font-family: var(--fontParagraph);
+        font-weight: 00;
+        font-size: 1rem;
+    }
+
+    #clientName,
+    #clientEmail,
+    #menssageArea,
+    #clientTel::placeholder {
+        font-family: var(--fontTitles);
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+
+    #sendMenssageButtom {
+        cursor: pointer;
+        align-self: flex-start;
+        justify-self: right;
+        align-self: baseline;
+        grid-column: span 2;
+        margin-top: 2px;
+
+        width: 104px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}

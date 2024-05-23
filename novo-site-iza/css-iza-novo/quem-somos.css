@@ -29,3 +29,27 @@
     margin: 16px 0 40px 0;
     padding: 0 32px;
 }
+
+@media screen and (min-width: 769px) {
+    #izaPresent{
+        padding: 64px 10%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #izaImage{
+        width: 328px;
+        height: 416px;
+        align-self: baseline;
+        justify-content: center;
+    }
+
+    #txtIzaPresent{
+        width: 416px;
+        margin: 0;
+    }
+    #txtIzaPresent h2{
+        color: var(--color30);
+        font-size: 2rem;
+    }
+}
