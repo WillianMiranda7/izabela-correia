@@ -28,6 +28,9 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
     font-size: 1rem;
     justify-content: center;
     background-color: var(--color60);
