@@ -1,8 +1,15 @@
-#portfolioContainer{
+/* #portfolioContainer{
     margin: 32px 0;
     padding: 8px 0;
 }
 
 .portfolioItem{
     margin-top: 16px;
+} */
+
+
+h1{
+    color: white;
+    padding: 56px 0 56px 32px;
+    border: solid 2px white;
 }
