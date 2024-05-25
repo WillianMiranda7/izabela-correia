@@ -134,6 +134,10 @@ form {
         margin-bottom: 0px;
     }
 
+    form{
+        padding: 0;
+    }
+
 
     #writeMenssage {
         margin-top: 0px;
@@ -142,6 +146,7 @@ form {
 
     #inputsGroup {
         display: grid;
+        align-self: flex-start;
         height: 150px;
         grid-template-columns: 55% 45%;
         grid-template-rows: auto auto auto;

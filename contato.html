@@ -78,16 +78,17 @@
 
                 <div>
                     <h2 id="writeMenssage">Mande uma mensagem:</h2>
+
                     <form action="https://formspree.io/f/mdoqvwjw" method="post">
 
                         <div id="inputsGroup">
                             <div id="inputsForm">
                                 <input id="clientName" type="text" name="clientName" autocomplete="name"
-                                    placeholder="Nome" title="Digite seu nome">
+                                    placeholder="Nome" title="Digite seu nome" required>
                                 <input id="clientEmail" type="email" name="clientEmail" autocomplete="email"
-                                    placeholder="Email" title="Digite seu Email">>
+                                    placeholder="Email" title="Digite seu Email" required>
                                 <input id="clientTel" type="tel" name="clientTel" autocomplete="tel"
-                                    placeholder="Número" maxlength="15" title="Digite sua mensagem">>
+                                    placeholder="Número" maxlength="15" title="Digite sua mensagem" required>
                             </div>
 
 
@@ -99,6 +100,7 @@
                                 title="Clique aqui para enviar sua mensagem"></button>>Enviar</button>
                         </div>
                     </form>
+
                 </div>
             </section>
         </main>
