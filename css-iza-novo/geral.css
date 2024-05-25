@@ -30,10 +30,12 @@ body {
     justify-content: center;
     font-size: 1rem;
     background-color: var(--color60);
+    width: 100%;
 }
 
 .theKingContainer{
     max-width: 1400px;
+    width: 100%;
 }
 
 .contentWithPadding {
@@ -190,15 +192,13 @@ header {
 
 
 
-
-
-
 .firstStripe {
     margin-top: 16px;
     background-color: var(--color30);
     padding: 8px 8px;
     color: #fff;
 }
+
 
 
 
@@ -216,6 +216,10 @@ footer {
     width: 100%;
     justify-content: space-evenly;
 }
+#iconGrop a{
+    padding: 8px;
+    
+}
 
 .socialFooterIcons {
     width: 32px;
@@ -229,11 +233,14 @@ path {
     color: white;
     font-family: var(--fontTitles);
     font-size: 1.1rem;
-    margin-top: 16px;
+    padding: 8px 0;
+    margin-top: 8px;
 }
 
 #logoWeWill {
-    margin-top: 16px;
+    margin-top: 8px;
+    padding: 8px;
+    margin-top: 8px;
 }
 
 

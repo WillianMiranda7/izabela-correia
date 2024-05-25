@@ -1,4 +1,5 @@
 /* Contact div */
+
 #contact {
     display: flex;
     flex-direction: column;
@@ -6,6 +7,7 @@
     align-items: center;
     background-color: var(--color30);
     padding: 24px 8px;
+    width: 100%;
 }
 
 #contact h1,
@@ -21,15 +23,18 @@ h2 {
 
 .linksOnContact {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     color: white;
     font-family: var(--fontTitles);
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 700;
 }
 
-.iconContact{
+.iconContact {
+    display: flex;
     width: 24px;
-    margin-right: 8px;
+    margin-bottom: 8px;
 }
 
 #whatsappLink {
@@ -56,10 +61,29 @@ form {
     justify-content: space-between;
 }
 
+
 #menssageArea {
     margin-top: 16px;
     width: 100%;
     resize: none;
+}
+
+#clientName,
+#clientEmail,
+#clientTel,
+#menssageArea {
+    padding: 8px;
+    font-family: var(--fontParagraph);
+    font-size: 1rem;
+}
+
+#clientName,
+#clientEmail,
+#menssageArea,
+#clientTel::placeholder {
+    font-family: var(--fontTitles);
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 #sendMenssageButtom {
@@ -99,6 +123,18 @@ form {
         align-self: center;
     }
 
+    .linksOnContact {
+        flex-direction: row;
+    }
+
+    .iconContact {
+        display: flex;
+        width: 24px;
+        margin-right: 8px;
+        margin-bottom: 0px;
+    }
+
+
     #writeMenssage {
         margin-top: 0px;
         text-align: start;
@@ -135,26 +171,6 @@ form {
         width: 100%;
         grid-row: span 2;
     }
-
-    #clientName,
-    #clientEmail,
-    #clientTel,
-    #menssageArea {
-        padding: 8px;
-        font-family: var(--fontParagraph);
-        font-weight: 00;
-        font-size: 1rem;
-    }
-
-    #clientName,
-    #clientEmail,
-    #menssageArea,
-    #clientTel::placeholder {
-        font-family: var(--fontTitles);
-        font-size: 1rem;
-        font-weight: 400;
-    }
-
 
     #sendMenssageButtom {
         cursor: pointer;

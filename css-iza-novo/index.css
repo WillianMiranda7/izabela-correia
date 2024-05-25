@@ -4,7 +4,7 @@
     color: #fff;
     line-height: 32px;
     background-image: url(/imagens-iza-novo/fundo-completo-430px.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
 }
@@ -43,7 +43,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 2;
 }
 
 .previewIcons {
