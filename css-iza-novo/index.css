@@ -143,8 +143,6 @@
                 var(--color30) 50%,
                 var(--color30) 90%,
                 var(--color60) 100%);
-
-        padding: 64px;
     }
 
     #about {
