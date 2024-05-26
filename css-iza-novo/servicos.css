@@ -12,7 +12,7 @@ p{
 
 #servicesContent{
     padding: 40px 8px;
-    background-image: url(../imagens-iza-novo/fundo-textura-zebra.png);
+    position: relative;
 }
 
 .separator{

@@ -57,9 +57,9 @@
     background-color: white;
     box-sizing: unset;
     padding: 24px;
-    border-radius: 1000px;
-    width: 56px;
-    height: 56px;
+    border-radius: 100px;
+    width: 48px;
+    height: 48px;
     justify-content: center;
     align-items: center;
 }
@@ -82,15 +82,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin: 40px 0; */
-    background-size: cover;
     position: relative;
+}
+
+.zebraTexture{
+    position: absolute;
+    background-image: url(../imagens-iza-novo/fundo-textura-zebra.png);
+    background-size: cover;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .1;
 }
 
 #about h1 {
     color: #8A2BE2;
     font-size: 2.9rem;
-    z-index: 2;
 }
 
 #zebraSide {
@@ -156,7 +164,7 @@
     #about {
         display: grid;
         grid-template-columns: 50% 50%;
-        margin: 0 10%;
+        padding: 56px 10%;
         justify-items: center;
 
     }

@@ -7,6 +7,9 @@
     margin-top: 16px;
 } */
 
+main{
+    position: relative;
+}
 
 h1{
     color: white;

@@ -190,8 +190,6 @@ header {
 }
 
 
-
-
 .firstStripe {
     margin-top: 16px;
     background-color: var(--color30);
@@ -199,7 +197,16 @@ header {
     color: #fff;
 }
 
-
+.zebraTexture{
+    position: absolute;
+    background-image: url(../imagens-iza-novo/fundo-textura-zebra.png);
+    background-size: cover;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .1;
+}
 
 
 /* Footer */
@@ -330,11 +337,18 @@ path {
 
     /* Footer mobile */
     footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    /* footer {
         flex-direction: row;
         align-items: center;
         padding: 16px 10%;
         justify-content: space-between;
-    }
+    } */
 
     #iconGrop {
         display: flex;
@@ -357,10 +371,23 @@ path {
         font-family: var(--fontTitles);
         font-size: 1.1rem;
         margin-top: 0;
+        padding: 0;
+        white-space: nowrap;
+    }
+    #iconGrop a{
+        padding: 0px;
+        
     }
 
     #logoWeWill {
         margin-top: 0;
+        padding: 0;
+    }
+
+    
+    #logoWeWill {
+        margin-top: 0px;
+        padding: 8px;
     }
 
 }
