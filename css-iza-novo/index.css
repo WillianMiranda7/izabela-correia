@@ -1,3 +1,7 @@
+.content {
+    position: relative;
+}
+
 #firstTitle {
     margin-top: 16px;
     padding: 16px 0 16px 16px;
@@ -64,7 +68,7 @@
     align-items: center;
 }
 
-.previewIcons path{
+.previewIcons path {
     fill: black;
 }
 
@@ -76,7 +80,69 @@
 }
 
 
-/* About */
+
+
+
+
+
+
+/* Portfolio */
+
+#portfolio {
+    position: relative;
+    height: 500px;
+    border: solid 2px white;
+}
+
+
+#portfolio h1 {
+    color: white;
+    padding: 56px 0 56px 32px;
+}
+
+
+
+
+/* Quem somos (Sobre) */
+#izaPresent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 8px;
+    position: relative;
+}
+
+#izaPresent h1 {
+    color: #8A2BE2;
+}
+
+/* #izaImage{
+    width: 200px;
+    height: 288px;
+} */
+
+#izaImage {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color30);
+
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+#txtIzaPresent {
+    margin: 16px 0 40px 0;
+    padding: 0 32px;
+}
+
+
+
+
+
+/* Segunda Apresentação */
 #about {
     padding: 40px 8px;
     display: flex;
@@ -85,7 +151,7 @@
     position: relative;
 }
 
-.zebraTexture{
+/* .zebraTexture {
     position: absolute;
     background-image: url(../imagens-iza-novo/fundo-textura-zebra.png);
     background-size: cover;
@@ -94,19 +160,208 @@
     width: 100%;
     z-index: -1;
     opacity: .1;
-}
+} */
 
 #about h1 {
-    color: #8A2BE2;
     font-size: 2.9rem;
+    color: #8A2BE2;
 }
 
-#zebraSide {
+
+
+
+
+
+
+/* Serviços */
+#servicesContent {
+    padding: 40px 8px;
     position: relative;
-    margin-top: 32px;
-    width: 192px;
-    opacity: .2;
 }
+
+#servicesContent h1 {
+    color: #fff;
+    font-size: 3.7rem;
+    position: relative;
+}
+
+#servicesContent h1::after {
+    content: "";
+    position: absolute;
+    background-color: #8A2BE2;
+    height: 4px;
+    width: 10%;
+    bottom: 0;
+    left: 0;
+}
+
+#services p {
+    margin-top: 8px;
+}
+
+/* #servicesStripe h1 {
+    color: #fff;
+} */
+
+.videoServices {
+    width: 100%;
+}
+
+
+.separator {
+    height: 56px;
+}
+
+.individualService {
+    color: #fff;
+}
+
+.txtServices {
+    color: #fff;
+    background-color: var(--colorContrast);
+    padding: 16px;
+    border-radius: 17px;
+}
+
+.txtServices h3 {
+    margin-top: 16px;
+}
+
+.txtServices ul {
+    margin-top: 8px;
+    font-family: var(--fontParagraph);
+    font-size: 1.10rem;
+    font-weight: 500;
+    line-height: 24px;
+    opacity: .9;
+}
+
+.txtServices ul li {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.photoService {
+    border-radius: 17px;
+    margin-top: 8px;
+}
+
+
+
+
+
+
+
+
+/* Contato */
+#contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 64px 8px;
+    width: 100%;
+
+    background: linear-gradient(to bottom,
+            var(--color60) 0%,
+            var(--color30)10%,
+            var(--color30)50%,
+            var(--color30)90%,
+            var(--colorContrast)100%);
+}
+
+#contact h1,
+h2 {
+    color: white;
+}
+
+#emailAndPhone {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+
+.linksOnContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: var(--fontTitles);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.iconContact {
+    display: flex;
+    width: 24px;
+    margin-bottom: 8px;
+}
+
+#whatsappLink {
+    margin-top: 8px;
+}
+
+#writeMenssage {
+    margin-top: 16px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#clientName,
+#clientEmail,
+#clientTel {
+    width: 100%;
+    margin-top: 8px;
+    height: 40px;
+    max-height: 40px;
+    justify-content: space-between;
+}
+
+
+#menssageArea {
+    margin-top: 16px;
+    max-height: 124px;
+    resize: none;
+}
+
+#clientName,
+#clientEmail,
+#clientTel,
+#menssageArea {
+    padding: 8px;
+    font-family: var(--fontParagraph);
+    font-size: 1rem;
+}
+
+#clientName,
+#clientEmail,
+#menssageArea,
+#clientTel::placeholder {
+    font-family: var(--fontTitles);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#sendMenssageButtom {
+    font-size: 1.2rem;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    margin-top: 16px;
+    width: 120px;
+    height: 56px;
+    background-color: var(--color10);
+
+    box-shadow: 1px 1px 8px;
+    border-style: none;
+}
+
+
+
 
 
 
@@ -114,11 +369,11 @@
 
 
     #firstTitle {
-        font-size: 2rem;
+        font-size: 1.7rem;
         background-image: url(../imagens-iza-novo/fundo-completo-600px.png);
         background-size: cover;
         line-height: 80px;
-        padding: 32px 0 128px 10%;
+        padding: 32px 0 144px 10%;
         position: relative;
     }
 
@@ -161,6 +416,36 @@
                 var(--color60) 100%);
     }
 
+
+    /* Quem Somos (Primeira Apresentação) */
+    #izaPresent {
+        padding: 64px 10%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #izaImage {
+        width: 376px;
+        height: unset;
+        align-self: baseline;
+        justify-content: center;
+    }
+
+    #txtIzaPresent {
+        width: 416px;
+        margin: 0;
+    }
+
+    #txtIzaPresent h2 {
+        color: var(--color30);
+        font-size: 2rem;
+    }
+
+
+
+
+
+    /* Segunda Apresentação */
     #about {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -170,10 +455,170 @@
     }
 
     #textAbout {
-        width: 100%;
+        width: 416px;
+        justify-self: right;
     }
 
-    #zebraSide {
-        width: 50%;
+    #iza2 {
+        width: 376px;
+        justify-self: left;
     }
+
+
+
+
+
+
+    /* Serviços */
+    #servicesContent {
+        padding: 64px 10%;
+        display: grid;
+        grid-template-rows: 3, 1fr;
+        row-gap: 32px;
+    }
+
+    /* #servicesContent h1{
+    
+    } */
+
+    .individualService {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "left right";
+        column-gap: 16px;
+    }
+
+    .secondTxt {
+        grid-area: right;
+    }
+
+    .secondImage {
+        grid-area: left;
+        justify-self: flex-end;
+    }
+
+
+    .txtServices {
+        width: 400px;
+    }
+
+    .firstTxt,
+    .thirdTxt {
+        justify-self: flex-end;
+    }
+
+    .photoService {
+        align-self: center;
+        width: 400px;
+        margin: 0;
+    }
+
+    .separator {
+        display: none;
+    }
+
+
+
+
+
+
+    /* Contato */
+    #contact {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 64px 10%;
+        flex-direction: row;
+
+        background: linear-gradient(to bottom,
+                var(--color60) 0%,
+                var(--color30) 5%,
+                var(--color30) 50%,
+                var(--color30) 95%,
+                var(--colorContrast) 100%);
+    }
+
+    #callingWithMailAndPhone {
+        height: 100%;
+        align-self: flex-start;
+    }
+
+    #contact h1 {
+        text-align: start;
+        align-self: flex-start;
+        white-space: nowrap;
+    }
+
+    #emailAndPhone {
+        text-align: start;
+        align-self: center;
+    }
+
+    .linksOnContact {
+        flex-direction: row;
+    }
+
+    .iconContact {
+        display: flex;
+        width: 24px;
+        margin-right: 8px;
+        margin-bottom: 0px;
+    }
+
+    form {
+        padding: 0;
+    }
+
+
+    #writeMenssage {
+        margin-top: 0px;
+        text-align: start;
+    }
+
+    #inputsGroup {
+        display: grid;
+        align-self: flex-start;
+        height: 124px;
+        max-height: 124px;
+        grid-template-columns: 55% 45%;
+        grid-template-rows: auto auto auto;
+        gap: 2px;
+        margin-top: 16px;
+    }
+
+    #inputsForm {
+        grid-row: span 2;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 2px;
+    }
+
+    #clientName,
+    #clientEmail,
+    #clientTel {
+        margin-top: 0px;
+        height: 100%;
+        justify-content: left;
+        justify-content: space-between;
+    }
+
+    #menssageArea {
+        margin-top: 0px;
+        width: 100%;
+        grid-row: span 2;
+    }
+
+    #sendMenssageButtom {
+        cursor: pointer;
+        align-self: flex-start;
+        justify-self: right;
+        align-self: baseline;
+        grid-column: span 2;
+        margin-top: 2px;
+
+        width: 104px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
 }

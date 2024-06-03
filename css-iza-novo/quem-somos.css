@@ -1,4 +1,4 @@
-#izaPresent{
+/*#izaPresent{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,10 +6,10 @@
     position: relative;
 }
 
-/* #izaImage{
+#izaImage{
     width: 200px;
     height: 288px;
-} */
+}
 
 #izaImage{
     width: 200px;
@@ -29,17 +29,18 @@
     margin: 16px 0 40px 0;
     padding: 0 32px;
 }
+*/
 
 @media screen and (min-width: 769px) {
-    #izaPresent{
+    /* #izaPresent{
         padding: 64px 10%;
         flex-direction: row;
         justify-content: center;
     }
 
     #izaImage{
-        width: 328px;
-        height: 416px;
+        width: 376px;
+        height: unset;
         align-self: baseline;
         justify-content: center;
     }
@@ -52,4 +53,5 @@
         color: var(--color30);
         font-size: 2rem;
     }
+    */
 }

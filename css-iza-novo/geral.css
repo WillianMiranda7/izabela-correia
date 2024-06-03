@@ -21,8 +21,8 @@
     --colorContrast: #1A1D1A;
 
     /* Fonts */
-    --fontTitles: "Roboto", sans-serif;
-    --fontParagraph: "Nunito", sans-serif;
+    --fontTitles: : Verdana, Geneva, Tahoma, sans-serif;
+    --fontParagraph: Arial, Helvetica, sans-serif;
 }
 
 body {
