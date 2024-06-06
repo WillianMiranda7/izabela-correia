@@ -205,7 +205,7 @@ header {
     height: 100%;
     width: 100%;
     z-index: -1;
-    opacity: .1;
+    opacity: .4;
 }
 
 
@@ -341,6 +341,7 @@ path {
         grid-template-columns: 1fr 1fr 1fr;
         align-items: center;
         justify-items: center;
+        padding: 16px 10%;
     }
 
     /* footer {
@@ -354,6 +355,7 @@ path {
         display: flex;
         width: auto;
         justify-content: unset;
+        justify-self: left;
     }
 
     .socialFooterIcons {
@@ -378,16 +380,11 @@ path {
         padding: 0px;
         
     }
-
-    #logoWeWill {
-        margin-top: 0;
-        padding: 0;
-    }
-
     
     #logoWeWill {
         margin-top: 0px;
         padding: 8px;
+        justify-self: flex-end;
     }
 
 }

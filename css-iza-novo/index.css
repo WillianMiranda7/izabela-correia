@@ -125,7 +125,6 @@
     width: 200px;
     display: flex;
     align-items: center;
-    text-align: center;
     background-color: var(--color30);
 
     color: #fff;
@@ -165,6 +164,11 @@
 #about h1 {
     font-size: 2.9rem;
     color: #8A2BE2;
+}
+
+#textAbout{
+    margin: 16px 0 40px 0;
+    padding: 0 32px;
 }
 
 
@@ -338,14 +342,14 @@ form {
     font-size: 1rem;
 }
 
-#clientName,
+/* #clientName,
 #clientEmail,
 #menssageArea,
 #clientTel::placeholder {
     font-family: var(--fontTitles);
     font-size: 1rem;
     font-weight: 400;
-}
+} */
 
 #sendMenssageButtom {
     font-size: 1.2rem;
@@ -421,18 +425,17 @@ form {
     #izaPresent {
         padding: 64px 10%;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     #izaImage {
-        width: 376px;
+        width: 520px;
         height: unset;
         align-self: baseline;
-        justify-content: center;
     }
 
     #txtIzaPresent {
-        width: 416px;
+        width: 100%;
         margin: 0;
     }
 
@@ -447,20 +450,19 @@ form {
 
     /* Segunda Apresentação */
     #about {
-        display: grid;
-        grid-template-columns: 50% 50%;
+        display: flex;
+        flex-direction: row;
         padding: 56px 10%;
-        justify-items: center;
-
+        justify-content: space-between;
     }
 
     #textAbout {
-        width: 416px;
-        justify-self: right;
+        width: 100%;
+        margin: 0;
     }
 
     #iza2 {
-        width: 376px;
+        width: 520px;
         justify-self: left;
     }
 
@@ -499,17 +501,21 @@ form {
 
 
     .txtServices {
-        width: 400px;
+        width: 100%;
     }
 
     .firstTxt,
     .thirdTxt {
         justify-self: flex-end;
     }
+    .thirdTxt {
+        height: fit-content;
+        align-self: center;
+    }
 
     .photoService {
         align-self: center;
-        width: 400px;
+        width: 100%;
         margin: 0;
     }
 
